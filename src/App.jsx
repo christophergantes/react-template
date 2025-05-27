@@ -1,9 +1,20 @@
 import "./App.css";
+import {Link} from "react-router-dom"
 
-function App() {
+const App = () => {
   return (
-    <h1>&quot;I swear by my pretty floral bonnet, I will end you.&quot;</h1>
+    <div>
+      <h1>Hello from the main page of the app!</h1>
+      <p>Here are some examples of links to other pages</p>
+      <nav>
+        <ul>
+          <li>
+            <Link to="profile">Profile page</Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
-}
+};
 
 export default App;
